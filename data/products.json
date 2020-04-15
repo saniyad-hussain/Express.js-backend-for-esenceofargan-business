@@ -1,0 +1,228 @@
+[
+  {
+    "category": "Skin Care",
+    "generalAbout": [
+      {
+        "header": "How To Use",
+        "body": "For best results, gently massage a generous amount into freshly cleansed skin up to three times daily."
+      },
+      {
+        "header": "The Benefits",
+        "body": "Essence Of Argan’s nutrient-rich formulas ensure essential moisture and nourishment. Our meticulously crafted skincare products can be used to revitalize ailments including acne, fine lines, dryness, eczema, psoriasis, scars, stretch marks and rashes."
+      }
+    ],
+    "suggestions": [
+      {
+        "id": "EOA-50-001",
+        "name": "50ml 100% Pure Argan Oil",
+        "image": "EOA-50-001"
+      },
+      {
+        "id": "EOA-50-001",
+        "name": "50ml 100% Pure Argan Oil",
+        "image": "EOA-50-001"
+      },
+      {
+        "id": "EOA-50-001",
+        "name": "50ml 100% Pure Argan Oil",
+        "image": "EOA-50-001"
+      },
+      {
+        "id": "EOA-50-001",
+        "name": "50ml 100% Pure Argan Oil",
+        "image": "EOA-50-001"
+      }
+    ],
+    "products": [
+      {
+        "id": "EOA-50-001",
+        "name": "ORGANIC MOROCCAN ARGAN OIL, 1.7 OZ.",
+        "price": 24.99,
+        "desc": "1.7 oz of  our 100% pure, all natural, organic Moroccan Argan oil. For skin, lips, hair and nails. Cruelty-free and sustainable."
+      },
+      {
+        "id": "EOA-30-001",
+        "name": "30ml 100% Pure Argan Oil",
+        "price": 19.99,
+        "desc": "1 oz of  our 100% pure, all natural, organic Moroccan Argan oil. For skin, lips, hair and nails. Cruelty-free and sustainable."
+      },
+      {
+        "id": "EOA-15-001",
+        "name": "15ml 100% Pure Argan Oil",
+        "price": 15.99,
+        "desc": "0.5 oz of  our 100% pure, all natural, organic Moroccan Argan oil. For skin, lips, hair and nails. Cruelty-free and sustainable"
+      }
+    ]
+  },
+  {
+    "category": "Hair Care",
+    "generalAbout": [
+      {
+        "header": "How To Use",
+        "body": "Gently massage desired amount into wet hair and scalp, rinse and repeat up to three times weekly."
+      },
+      {
+        "header": "The Benefits",
+        "body": "Argan Oil’s essential Omega 3 and Omega 9 fatty acids penetrate hair, correcting damaged follicles and increasing overall luster. This non-greasy formula tames frizz, aides dry scalp and strengthens weak strands."
+      }
+    ],
+    "suggestions": [
+      {
+        "id": "EOA-50-001",
+        "name": "50ml 100% Pure Argan Oil",
+        "image": "EOA-50-001"
+      },
+      {
+        "id": "EOA-50-001",
+        "name": "50ml 100% Pure Argan Oil",
+        "image": "EOA-50-001"
+      },
+      {
+        "id": "EOA-50-001",
+        "name": "50ml 100% Pure Argan Oil",
+        "image": "EOA-50-001"
+      },
+      {
+        "id": "EOA-50-001",
+        "name": "50ml 100% Pure Argan Oil",
+        "image": "EOA-50-001"
+      }
+    ],
+    "products": [
+      {
+        "id": "SHMP-PNK-12-001",
+        "name": "Moisture-Repair Argan Oil Shampoo, 12 oz.",
+        "price": 12.99,
+        "large": true,
+        "desc": "Never settle for dull - our Argan infused shampoo ensures bright, shiny, healthy (and flake-free) hair."
+      },
+      {
+        "id": "CNDR-PNK-12-001",
+        "name": "Moisture-Repair Argan Oil Conditioner, 12 oz.",
+        "price": 12.99,
+        "large": true,
+        "desc": "Our non-greasy repairing conditioner, with 6x more pure Argan oil than the most popular brands on the market."
+      },
+      {
+        "id": "MSQ-8-001",
+        "name": "Deep Conditioning Argan Oil Hair Masque, 8 oz",
+        "price": 14.99,
+        "large": true,
+        "desc": "Treat your hair to a spa day with our hair masque. Deep condition even chemically treated hair with extra keratin."
+      }
+    ]
+  },
+  {
+    "category": "Cosmetics",
+    "generalAbout": [
+      {
+        "header": "How To Use",
+        "body": "Apply desired amount to lips daily"
+      },
+      {
+        "header": "The Benefits",
+        "body": "Our organically sourced Argan Oil provides luxurious, transformative benefits to lips, including deep hydration and nourishment."
+      }
+    ],
+    "suggestions": [
+      {
+        "id": "EOA-50-001",
+        "name": "50ml 100% Pure Argan Oil",
+        "image": "EOA-50-001"
+      },
+      {
+        "id": "EOA-50-001",
+        "name": "50ml 100% Pure Argan Oil",
+        "image": "EOA-50-001"
+      },
+      {
+        "id": "EOA-50-001",
+        "name": "50ml 100% Pure Argan Oil",
+        "image": "EOA-50-001"
+      },
+      {
+        "id": "EOA-50-001",
+        "name": "50ml 100% Pure Argan Oil",
+        "image": "EOA-50-001"
+      }
+    ],
+    "products": [
+      {
+        "id": "LIPS-",
+        "name": "ORGANIC MOROCCAN ARGAN OIL, 1.7 OZ.",
+        "price": 14.99,
+        "desc": "100% pure formula containing all natural organic Argan oil for soft, well-hydrated lips."
+      },
+      {
+        "id": "LIPG-",
+        "name": "ORGANIC MOROCCAN ARGAN OIL, 1 OZ.",
+        "price": 14.99,
+        "desc": "Hydrate dry and cracked lips with a sexy explosion of  color. A moisturizing and nourishing alternative to lipstick or stain."
+      },
+      {
+        "id": "MASCARA-001",
+        "name": "ORGANIC MOROCCAN ARGAN OIL, 0.5 OZ.",
+        "price": 19.99,
+        "desc": "Complete your collection of  argan-infused makeup with this breakout mascara. Lengthen, strengthen and help grow."
+      }
+    ]
+  },
+  {
+    "category": "Culinary",
+    "generalAbout": [
+      {
+        "header": "How To Use",
+        "body": "This nutrient-rich oil complements sweet and savory foods alike. Blend with honey or chocolate, drizzle over vegetables, salads, sauces and more."
+      },
+      {
+        "header": "The Benefits",
+        "body": "Used for thousands of years in the kitchen, Argan Oil possesses a rich flavor and dense nutrients, which may play a part in preventing cancer, heart disease and obesity."
+      }
+    ],
+    "suggestions": [
+      {
+        "id": "EOA-50-001",
+        "name": "50ml 100% Pure Argan Oil",
+        "image": "EOA-50-001"
+      },
+      {
+        "id": "EOA-50-001",
+        "name": "50ml 100% Pure Argan Oil",
+        "image": "EOA-50-001"
+      },
+      {
+        "id": "EOA-50-001",
+        "name": "50ml 100% Pure Argan Oil",
+        "image": "EOA-50-001"
+      },
+      {
+        "id": "EOA-50-001",
+        "name": "50ml 100% Pure Argan Oil",
+        "image": "EOA-50-001"
+      }
+    ],
+    "products": [
+      {
+        "id": "CO-EOA-750-001",
+        "name": "750ml Culinary Argan Oil",
+        "price": 74.99,
+        "large": true,
+        "desc": "750ml of our eco-certified and organic food grade culinary Argan oil. Gives dishes a rich toasted, nutty flavor."
+      },
+      {
+        "id": "CO-EOA-500-001",
+        "name": "500ml Culinary Argan Oil",
+        "price": 49.99,
+        "large": true,
+        "desc": "500ml of our eco-certified and organic food grade culinary Argan oil. Gives dishes a rich toasted, nutty flavor."
+      },
+      {
+        "id": "CO-EOA-250-001",
+        "name": "250ml Culinary Argan Oil",
+        "price": 24.99,
+        "large": true,
+        "desc": "250ml of our eco-certified and organic food grade culinary Argan oil. Gives dishes a rich toasted, nutty flavor."
+      }
+    ]
+  }
+]

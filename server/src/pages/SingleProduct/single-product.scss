@@ -1,0 +1,193 @@
+@import '../stylesVariables.scss';
+
+@mixin bottomMargin {
+  margin-bottom: 3rem;
+
+  @media #{$notMobile} {
+    margin-bottom: 5.5rem;
+  }
+}
+
+.breadcrumb {
+  @include spacing();
+  @include maxWidth();
+  @include breadcrumb();
+
+  @media #{$mobile} {
+    text-align: center; 
+  }
+}
+
+.productMain {
+  @include spacing();
+  @include maxWidth();
+  margin: 0 auto 0;
+  @include bottomMargin();
+
+  @media #{$notMobile} {
+    display: flex;
+  }
+}
+
+.productImageContainer {
+  width: 70%;
+  margin: 0 auto 2rem;
+  @media #{$notMobile} {
+    flex: 0 1 50%;
+    margin: 0 1.5rem 0 0;
+  }
+}
+
+// This is used for both the main image and suggestion product images
+.productImage {
+  width: 100%;
+  border: solid 1px black;
+}
+
+.productPurchaseContainer {
+  @media #{$notMobile} {
+    flex: 0 1 50%;
+    margin: 0 0 0 1.5rem;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+
+    @media #{$notMobile} {
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+.productName {
+  margin: 1.25rem 0 .8rem;
+  font-size: 1.2rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.7rem;
+
+  @media #{$notMobile} {
+    margin: 0 0 1rem;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+
+.productPurchaseOptions {
+  
+}
+
+.generalAbout {
+  @include spacing();
+  @include maxWidth();
+  @include bottomMargin();
+  text-align: center;
+
+  @media #{$notMobile} {
+    text-align: left;
+  }
+
+  h3 {
+    margin: 0 0 1rem;
+    font-size: 1rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    @media #{$notMobile} {
+      margin: 2.75rem 0 1.8rem;
+      font-size: 2rem;
+    }
+  }
+  hr {
+    margin: 1rem 0 1.5rem;
+    border-top: none;
+    @media #{$notMobile} {
+      margin: 2.5rem 0 2.5rem;
+    }
+  }
+  p {
+    margin: 0 0 1rem;
+  }
+}
+
+.suggestions {
+  background-color: #fff7e4;
+  @include bottomMargin();
+  padding: 1rem 0;
+
+  @media #{$notMobile} {
+    padding: 5rem 0;
+  }
+
+  h3 {
+    font-weight: normal;
+    padding: 0 1rem;
+
+    @media #{$notMobile} {
+      margin: 1rem 0 2.5rem;
+      font-size: 2rem;
+    }
+  }
+}
+
+.suggestionsList {
+  overflow: scroll;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.suggestion {
+  display: inline-block;
+  width: 142px;
+  padding: 0 1rem;
+  white-space: normal;
+  text-align: center;
+
+  &:link, &:visited {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &:hover, &:focus {
+    text-decoration: underline;
+  }
+
+  @media #{$notMobile} {
+    width: 332px;
+  }
+
+  img {
+    width: 110px;
+    @media #{$notMobile} {
+      width: 300px;
+    }
+  }
+  h4 {
+    font-size: .8rem;
+    text-transform: uppercase;
+    @media #{$notMobile} {
+      font-size: .9rem;
+    }
+  }
+}
+
+.reviews {
+  @include spacing();
+  @include maxWidth();
+  @include bottomMargin();
+}
+
+.readMoreContainer {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 3rem;
+  @include bottomMargin();
+
+  a {
+    @include brightButton();
+    padding: .25rem 2rem;
+    font-size: .8rem;
+  }
+}

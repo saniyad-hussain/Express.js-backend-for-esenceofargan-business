@@ -1,0 +1,69 @@
+$mobileWidth: 840px;
+$mobile: "(max-width: 839px)";
+$notMobile: "(min-width: 840px)";
+$fullWidth: 1024px;
+$brightButtonBackground: #ffc74f;
+
+$mobileFontSize: .7rem;
+
+@mixin bodyText {
+  line-height: 1.1875rem;
+  font-size: 0.7rem;
+  letter-spacing: .5px;
+
+  @media (min-width: $fullWidth) {
+    line-height: 2rem;
+    font-size: 1.1rem;
+  }
+}
+
+@mixin brightButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: $brightButtonBackground;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: .5px;
+
+  &:link, &:visited {
+    color: black;
+  }
+
+  &:link:hover, &:link:focus, &:link:active {
+    text-decoration: underline;
+  }
+}
+
+@mixin breadcrumb {
+  margin: 1.2rem 0;
+  font-family: Montserrat, sans-serif;
+  font-size: .7rem;
+
+  @media #{$notMobile} {
+    margin-top: 2.75rem;
+    margin-bottom: 3.5rem;
+    font-size: .8rem;
+  }
+}
+
+@mixin spacing {
+  padding: 0 2rem;
+
+  @media #{$notMobile} {
+    padding: 0;
+  }
+}
+
+@mixin maxWidth {
+  @media #{$notMobile} {
+    width: 960px;
+    max-width: calc(100% - 4rem);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

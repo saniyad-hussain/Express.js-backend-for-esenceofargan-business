@@ -1,0 +1,261 @@
+@import '../stylesVariables.scss';
+
+.shop {
+  text-align: center;
+
+  @media #{$notMobile} {
+    text-align: left;
+  }
+}
+
+.breadcrumb {
+  @include spacing();
+  @include maxWidth();
+  @include breadcrumb();
+}
+
+.bannerImg1 {
+  display: block; // IE11 <picture> fixer.
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 4rem);
+  height: calc(100vw - 4rem);
+  max-height: 538px;
+  margin: auto;
+  overflow: hidden;
+
+  @media #{$notMobile} {
+    height: 538px;
+    display: block;
+  }
+
+  img {
+    display: block;
+    top: 0;
+    width: auto;
+    height: 100%;
+
+    @media #{$notMobile} {
+      height: 640px;
+      margin: auto;
+    }
+
+    @media (min-width: $mobileWidth) and (max-width: 1024px) {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.heading {
+  @include spacing();
+  @include maxWidth();
+  margin-top: 2.75rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+
+  @media #{$notMobile} {
+    margin: 6.4rem auto 5.5rem;
+  }
+
+  h2, h3 {
+    margin: 1.25rem 0 .8rem;
+    font-size: 1.2rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.7rem;
+
+    @media #{$notMobile} {
+      margin: 2.5rem 0 2.5rem;
+      font-size: 2.4rem;
+    }
+  }
+
+  p {
+    font-size: .7rem;
+    line-height: 1.45rem;
+
+    @media #{$notMobile} {
+      font-size: 1rem;
+      line-height: 2.25rem;
+      letter-spacing: .5px;
+      margin: 1rem 0;
+    }
+  }
+}
+
+.products {
+  @include spacing();
+  margin-bottom: 1rem;
+  display: flex;
+  padding: 0 20px;
+
+  > * {
+    flex: 1 1 33%;
+    margin: 20px;
+
+    @media (max-width: 800px) {
+      margin: 10px 10px 40px;
+    }
+  }
+
+  @media #{$mobile} {
+    display: block;
+    flex-direction: column;
+
+    > * {
+      flex: 1 1 auto;
+    }
+  }
+}
+
+.bannerImg2 {
+  display: block; // IE11 <picture> fixer.
+  height: 56.25vw;
+  overflow: hidden;
+
+  @media #{$notMobile} {
+    height: 500px;
+  }
+
+  img, picture {
+    width: 100%;
+
+    @media #{$notMobile} {
+      position: relative;
+      bottom: 15vw;
+    }
+  }
+}
+
+.additionalInfo {
+  @include spacing();
+  @include maxWidth();
+  font-family: Montserrat, sans-serif;
+  padding-top: 1.65rem;
+  padding-bottom: 1.5rem;
+
+  @media #{$notMobile} {
+    margin: 6rem auto;
+  }
+
+  h3 {
+    margin: 1.25rem 0 .8rem;
+    font-size: 1rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    @media #{$notMobile} {
+      margin: 2.75rem 0 1.8rem;
+      font-size: 2rem;
+    }
+  }
+
+  p {
+    font-size: .8rem;
+    line-height: 1.45rem;
+
+    @media #{$notMobile} {
+      font-size: 1.2rem;
+      line-height: 2.25rem;
+    }
+  }
+
+  hr {
+    margin: 1.25rem 0;
+    border-top: none;
+
+    @media #{$notMobile} {
+      margin: 2.25rem 0;
+    }
+  }
+}
+
+.bannerImg3 {
+  display: block; // IE11 <picture> fixer.
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 320px;
+  overflow: hidden;
+
+  @media (min-width: 560px) {
+    height: auto;
+  }
+
+  @media #{$notMobile} {
+    @include spacing();
+  }
+
+  img, picture {
+    display: block;
+    position: relative;
+    height: 100%;
+
+    @media (min-width: 560px) {
+      height: auto;
+      min-height: 1px; // Random IE11 fix...
+      width: 100%;
+      max-width: 960px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('/assets/images/shop/ECO_LOGO.png');
+    background-size: 20.93vw 17.07vw;
+    background-repeat: no-repeat;
+    // 249x203 pixels
+    // width: 20.93vw;
+    // height: 17.07vw;
+
+    @media (min-width: 960px) {
+      width: 960px;
+      margin-left: auto;
+      margin-right: auto;
+      background-size: 174.4px auto;
+    }
+  }
+}
+
+.bannerImg3TopLeft::after {
+  background-position: top left;
+}
+.bannerImg3TopRight::after {
+  background-position: top right;
+}
+.bannerImg3BottomLeft::after {
+  background-position: bottom left;
+}
+.bannerImg3BottomRight::after {
+  background-position: bottom right;
+}
+
+.lastStatement {
+  margin: 2.65rem auto;
+  @include spacing();
+  @include maxWidth();
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 1.7rem;
+  text-align: center;
+
+  @media (min-width: $fullWidth) {
+    font-size: 2rem;
+    line-height: 3.5rem;
+  }
+}

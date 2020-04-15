@@ -1,0 +1,152 @@
+@import '../stylesVariables.scss';
+
+$mobileFontSize: .6rem;
+
+.contact {
+  font-family: Montserrat, sans-serif;
+  width: calc(100% - 4rem);
+  max-width: 976px;
+  margin: auto;
+  text-align: center;
+
+  @media #{$notMobile} {
+    width: calc(100% - 2rem);
+    text-align: left;
+  }
+
+  > div {
+    margin-bottom: 3rem;
+    border-bottom: solid 1px black;
+    padding-bottom: 2rem;
+
+    @media #{$notMobile} {
+      margin-bottom: 5rem;
+      padding-bottom: 4rem;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+      border-bottom: none;
+    }
+  }
+
+  h1, h2 {
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    font-size: 1.1rem;
+    margin: 3rem auto;
+
+    @media #{$notMobile} {
+      font-size: 2.5rem;
+    }
+  }
+
+  h2 {
+    margin: 1rem auto;
+    font-size: 1rem;
+    letter-spacing: 3px;
+
+    @media #{$notMobile} {
+      margin: 2rem auto;
+      font-size: 2rem;
+    }
+  }
+
+  p, dl {
+    font-size: $mobileFontSize;
+    line-height: 1.5rem;
+
+    @media #{$notMobile} {
+      font-size: 1.1rem;
+      line-height: 2.2rem;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+.pageTitle {
+  font-size: 2.5rem;
+  margin: 5.75rem auto 5.25rem;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.phoneList {
+  dt {
+    display: inline;
+    text-transform: uppercase;
+  }
+
+  dd {
+    display: inline;
+    margin-left: .5rem;
+  }
+
+  dd::after {
+    content: "";
+    display: block;
+
+    // @media #{$notMobile} {
+    //   margin-bottom: 1rem;
+    // }
+  }
+}
+
+.returnAddresses {
+  @media (min-width: $fullWidth) {
+    column-count: 2;
+  }
+}
+
+.returnAddress {
+  break-inside: avoid;
+  text-transform: uppercase;
+
+  h3 {
+    margin: 0;
+    font-size: $mobileFontSize;
+    font-weight: bold;
+    line-height: 1.5rem;
+
+    @media #{$notMobile} {
+      font-size: 1.1rem;
+      line-height: 2.2rem;
+      letter-spacing: 1px;
+    }
+  }
+
+  p {
+    margin: 0 0 1.5rem;
+    white-space: pre-line;
+
+    @media #{$notMobile} {
+      margin: 0 0 2rem;
+    }
+  }
+}
+
+.badges {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+
+  @media #{$notMobile} {
+    margin-top: 3.5rem;
+  }
+
+  img {
+    flex: 0 0 2.8rem;
+    width: 2.8rem;
+    margin: 1rem .75rem;
+
+    @media #{$notMobile} {
+      flex-basis: 7.5rem;
+      width: 7.5rem;
+      margin: 2rem 1.5rem;
+    }
+  }
+}

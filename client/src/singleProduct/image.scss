@@ -1,0 +1,109 @@
+@import '../styleVariables.scss';
+
+.mainImageButton {
+  margin: 0 0 1rem;
+  border: 0;
+  padding: 0;
+  background: none;
+  display: block;
+
+  &:focus {
+    outline: dotted 1px black;
+  }
+
+  img {
+    display: block;
+  }
+}
+
+.thumbnails {
+  text-align: center;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.thumbnailButton {
+  display: inline-block;
+  background: none;
+  outline: solid 1px black;
+  margin: 2px .25rem;
+  border: none;
+  padding: 0;
+}
+
+.activeThumbnailButton {
+  outline: solid 2px black;
+}
+
+.thumbnailImage {
+  display: block;
+  width: 40px;
+  height: 40px;
+
+  @media #{$notMobile} {
+    width: 80px;
+    height: 80px;
+  }
+  @media (min-width: 1366px) {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.dialog {
+  min-width: 300px;
+  padding: 1rem;
+  position: relative;
+  width: 90vw;
+
+  @media #{$notMobile} {
+    margin: 0 auto;
+  }
+
+  @media #{$notMobile} and (min-aspect-ratio: 4/3) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 100%;
+
+    .thumbnails {
+      flex: 1 1 auto;
+      max-width: 18rem;
+    }
+
+    .thumbnailButton {
+      display: block;
+      margin: .25rem auto;
+    }
+  }
+}
+
+.largeViewImage {
+  max-width: 100%;
+  max-height: 100%;
+
+  @media #{$notMobile} {
+    display: block;
+    width: 80vh;
+    height: 80vh;
+    margin: auto;
+  }
+
+  @media #{$notMobile} and (min-aspect-ratio: 4/3) {
+    width: auto;
+    height: auto;
+    margin: 0;
+  }
+}
+
+.closeButton {
+  position: absolute;
+  top: .25rem;
+  right: .25rem;
+
+  @media #{$notMobile} {
+    top: 1rem;
+    right: 1rem;
+  }
+}

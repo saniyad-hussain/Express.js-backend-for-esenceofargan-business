@@ -1,0 +1,53 @@
+{
+  "name": "essenceofargan-com-server",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node bin/www",
+    "dev": "cross-env NODE_ENV=development concurrently -k -n babel,node \"npm run babel-dev\" \"npm run server-dev\"",
+    "babel-dev": "nodemon --watch src -e js,css,scss,json --exec \"babel -d build --ignore **/*.test.js\" src",
+    "server-dev": "nodemon -d .25 -i src bin/www",
+    "build": "cross-env NODE_ENV=production babel src -d build --ignore **/*.test.js",
+    "build-dev": "cross-env NODE_ENV=development babel src -d build --ignore **/*.test.js",
+    "test": "jest"
+  },
+  "license": "0BSD",
+  "dependencies": {
+    "bluebird": "^3.5.5",
+    "classnames": "^2.2.6",
+    "connect-session-knex": "^1.4.0",
+    "csurf": "^1.9.0",
+    "express": "^4.17.1",
+    "express-promise-router": "^3.0.3",
+    "express-session": "^1.15.6",
+    "helmet": "^3.16.0",
+    "knex": "^0.17.5",
+    "postcss-import": "^12.0.1",
+    "prop-types": "^15.7.2",
+    "ramda": "^0.26.1",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "scrypt-for-humans": "^2.0.5",
+    "sqlite3": "^4.0.6",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-react": "^7.0.0",
+    "autoprefixer": "^9.6.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.8.0",
+    "babel-plugin-css-modules-transform": "^1.6.2",
+    "concurrently": "^4.1.0",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.15.1",
+    "eslint-plugin-react": "^7.12.4",
+    "jest": "^24.8.0",
+    "nodemon": "^1.19.1",
+    "react-test-renderer": "^16.8.6",
+    "sass": "^1.21.0"
+  }
+}

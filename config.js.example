@@ -1,0 +1,22 @@
+'use strict';
+
+module.exports = {
+  knexConfig: {
+    client: 'sqlite3',
+    connection: {
+      filename: '../data/dev.sqlite',
+    },
+    useNullAsDefault: true,
+    // connection: {
+    //   database: 'dbname',
+    //   user: 'gbuser',
+    //   password: 'dbuserpassword',
+    // },
+  },
+  // secret: generate hardcoded session secret with `node -e "const c = require('crypto'); console.log(c.randomBytes(36).toString('hex'))"`
+  secret: '',
+  port: '3000',
+  securePort: '3001',
+  tlsCert: '../tls/cert.pem',
+  tlsKey: '../tls/key.pem',
+};

@@ -1,0 +1,32 @@
+{
+  "instagram": "https://www.instagram.com/essenceofarganoil/",
+  "facebook": "https://www.facebook.com/Essenceofarganoilonline/",
+  "phone": {
+    "usa": "+1 888 730-3153",
+    "canada": "+1 888 317-3387",
+    "uk": "+44 800 086-8439",
+    "ireland": "+353 800 816054",
+    "belgium": "+32 800 26353",
+    "australia": "+61 1800 514 358",
+    "nz": "+64 800 141 482"
+  },
+  "addresses": [
+    {
+      "name": "Australia and New Zealand",
+      "address": "Essence of Argan™\nPO Box 230\nNarellan, NSW 2567, Australia\n+61 1800 058 430"
+    },
+    {
+      "name": "USA",
+      "address": "Essence of Argan™\n6741 W. Sunrise Blvd. Bay #5\nPlantation, FL. 33313, USA\n+1 888 730 3153"
+    },
+    {
+      "name": "Europe",
+      "address": "Essence of Argan™\nCarolina Court, 69 Giuseppe Cali ST., FL.2\nTa’xbiex, XBX 1425, Malta\n+353 800 816 054"
+    },
+    {
+      "name": "Canada",
+      "address": "Essence of Argan™\n3600 B Laird RD. Unit 2\nMississauga, Ontario L5L 6A7, Canada\n+1 888 317 3387"
+    }
+  ],
+  "emailBase": "essenceofargan.com"
+}

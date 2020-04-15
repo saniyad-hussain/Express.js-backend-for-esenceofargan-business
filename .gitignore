@@ -1,0 +1,19 @@
+# IDE
+.idea/
+.vscode/
+
+# Misc
+node_modules
+.cache/
+package-lock.json
+
+# Dist
+data/*.sqlite
+server/build
+server/css
+client/dist/
+/static
+
+tls/
+config.js
+config.json

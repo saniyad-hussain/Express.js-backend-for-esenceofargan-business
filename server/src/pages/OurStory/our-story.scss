@@ -1,0 +1,172 @@
+@import '../stylesVariables.scss';
+
+@mixin maxSizeContainer {
+  margin: 50px auto 0;
+  padding: 0 1.875rem;
+  text-align: center;
+
+  @media (min-width: $fullWidth) {
+    clear: both;
+    width: 960px;
+    margin-top: 100px;
+    padding: 0;
+  }
+}
+
+.ourStory {
+  h1, h2 {
+    font-weight: normal;
+  }
+}
+
+.pageTitle, .callouts > *, .callout, .usages {
+  @include maxSizeContainer();
+}
+
+.pageTitle {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  margin: 3rem 0;
+  letter-spacing: 3px;
+
+  @media #{$notMobile} {
+    font-size: 2.5rem;
+    margin: 5.5rem auto;
+  }
+}
+
+.jumboImage {
+  margin: 50px auto 0;
+  height: 180px;
+  background-size: 120% auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-image: url('/assets/images/our-story/parallax_1920.jpg');
+
+  @media (min-width: 1921px) {
+    background-image: url('/assets/images/our-story/parallax_3840.jpg');
+  }
+  @media (max-width: 1920px) {
+    background-image: url('/assets/images/our-story/parallax_1920.jpg');
+  }
+  @media (max-width: 1440px) {
+    background-image: url('/assets/images/our-story/parallax_1440.jpg');
+  }
+  @media (max-width: 800px) {
+    height: 180px;
+    background-image: url('/assets/images/our-story/parallax_800.jpg');
+  }
+
+  @media (min-width: $fullWidth) {
+    background-size: 100% auto;
+    margin-top: 100px;
+    height: 500px;
+  }
+}
+
+.visionContainer {
+  padding: 3.125rem 1rem 2rem;
+  background-color: #fef7e5;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: Montserrat, sans-serif;
+
+  h2 {
+    margin-top: 0;
+    font-size: .9rem;
+
+    @media (min-width: $fullWidth) {
+      font-size: 2.5rem;
+      margin-top: 2.5rem;
+    }
+  }
+
+  p {
+    font-size: .6rem;
+    line-height: 1.4rem;
+    letter-spacing: 1px;
+
+    @media (min-width: $fullWidth) {
+      max-width: 960px;
+      margin: 1rem auto 3rem;
+      font-size: 1.1rem;
+      line-height: 2rem;
+    }
+  }
+}
+
+.callout {
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 1.7rem;
+
+  @media (min-width: $fullWidth) {
+    font-size: 2rem;
+    line-height: 3.5rem;
+  }
+}
+
+.usages {
+  padding: 0;
+  margin-bottom: 2.5rem;
+
+  @media (min-width: $fullWidth) {
+    text-align: left;
+    overflow: hidden;
+    margin-bottom: 3.5rem;
+  }
+
+  // image size: 408x612
+  img {
+    width: 320px;
+    margin-top: -1.2rem;
+
+    @media (min-width: $fullWidth) {
+      width: 430px;
+      margin-top: -1.6rem;
+    }
+  }
+
+  h3 {
+    font-size: .8rem;
+    font-family: Baskerville, serif;
+    letter-spacing: 1px;
+    margin: 3.25rem 0 1rem;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+    font-size: .8rem;
+    line-height: 1.25rem;
+  }
+
+  @media (min-width: $fullWidth) {
+    h3 {
+      margin: 0 0 1rem;
+      font-size: 1.1rem;
+      letter-spacing: 1px;
+    }
+
+    li {
+      font-size: 1.1rem;
+      line-height: 2.1rem;
+    }
+  }
+}
+
+.imageWrap {
+  height: 320px;
+  overflow: hidden;
+
+  @media (min-width: $fullWidth) {
+    height: 538px;
+    float: right;
+  }
+}

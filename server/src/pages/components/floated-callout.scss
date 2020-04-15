@@ -1,0 +1,101 @@
+@import '../stylesVariables.scss';
+
+.floatedCallout {
+  @media (min-width: $fullWidth) {
+    clear: both;
+    width: 960px;
+    text-align: left;
+    overflow: hidden;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    max-width: 380px;
+    margin: auto;
+    padding: 0 1.5rem;
+    @media (min-width: $fullWidth) {
+      max-width: none;
+      width: 430px;
+      padding: 0;
+      float: left;
+    }
+  }
+
+  @media (min-width: $fullWidth) {
+    &:nth-of-type(2n + 1) img {
+      float: right;
+    }
+  }
+
+  h2 {
+    font-family: Baskerville, serif;
+    font-weight: normal;
+
+    @media (min-width: $fullWidth) {
+      font-size: 2.3rem;
+    }
+  }
+
+  p {
+    @include bodyText();
+
+    @media (min-width: $fullWidth) {
+      line-height: 2rem;
+      font-size: 1.1rem;
+    }
+  }
+
+  &.reverse {
+    @media (min-width: $fullWidth) {
+      img {
+        float: right;
+      }
+
+      &:nth-of-type(2n + 1) img {
+        float: left;
+      }
+    }
+  }
+}
+
+.floatedCalloutContent {
+  @media (min-width: $fullWidth) {
+    width: 430px;
+    float: right;
+
+    .floatedCallout:nth-of-type(2n + 1) & {
+      float: left;
+    }
+
+    .reverse & {
+      float: left;
+    }
+
+    .reverse.floatedCallout:nth-of-type(2n + 1) & {
+      float: right;
+    }
+  }
+}
+
+.floatedCalloutLink {
+  display: block;
+  margin: 0 auto;
+  font-family: Montserrat, sans-serif;
+  font-size: 0.625rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: .5px;
+  color: black;
+
+  &:link:hover, &:link:focus, &:link:active {
+    text-decoration: underline;
+  }
+
+  @media (min-width: $fullWidth) {
+    font-size: .9rem;
+    text-align: left;
+  }
+}

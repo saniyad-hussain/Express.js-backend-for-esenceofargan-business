@@ -1,0 +1,239 @@
+@import '../stylesVariables.scss';
+
+.product {
+  display: block;
+  text-align: center;
+  @supports (display: flex) {
+    display: flex;
+    flex-direction: column;
+  }
+  > * {
+    margin: 0;
+  }
+}
+
+.annotation {
+  margin: .5rem 0;
+  font-style: italic;
+  font-size: 1.1em;
+}
+
+.imageWrapper {
+  display: block;
+  position: relative;
+  margin: auto;
+  margin-bottom: 1rem;
+  width: 70%;
+  @supports (display: flex) {
+    width: 100%;
+  }
+
+  @media #{$notMobile} {
+    margin-bottom: 26px;
+  }
+}
+
+.imageSpaceHolder {
+  display: none;
+  @supports (display: flex) {
+    display: block;
+  }
+  width: 70%;
+  margin: auto;
+  border: solid 1px black;
+
+  @media (max-height: 800px) {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  @media #{$mobile} {
+    max-width: none;
+    max-height: none;
+    width: 70%;
+  }
+}
+
+.productImage {
+  display: block;
+  position: relative;
+  width: 100%;
+  @supports (display: flex) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 70%;
+  }
+  margin: auto;
+  background: gray;
+  border: solid 1px transparent;
+
+  @media (max-height: 800px) {
+    max-width: 200px;
+  }
+
+  @media #{$mobile} {
+    max-width: 70%;
+  }
+}
+
+// .hideImage {
+//   opacity: 0;
+// }
+
+// .productHoverButton {
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   height: 100%;
+//   margin-bottom: 27px;
+//   padding: 0;
+//   display: block;
+//   @supports (display: flex) {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     width: 70%;
+//     margin: auto;
+//   }
+//   background: rgba(255, 255, 255, 0.5);
+//   border: none;
+//   opacity: 0;
+//   font-family: Montserrat, sans-serif;
+//   font-weight: bold;
+
+//   @media #{$mq-short} {
+//     max-width: 200px;
+//   }
+
+//   @media #{$mq-mobile} {
+//     max-width: 70%;
+//   }
+
+//   &:hover {
+//     opacity: 1;
+//   }
+
+//   > svg {
+//     width: 80px;
+//     height: 80px;
+//   }
+// }
+
+.productName {
+  margin-bottom: .25rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: .8rem;
+
+  @media #{$notMobile} {
+    margin-bottom: .5rem;
+    font-size: 1rem;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.productPrice {
+  font-weight: bold;
+  margin-bottom: .25rem;
+  font-family: Montserrat, sans-serif;
+  font-size: .8rem;
+
+  @media #{$notMobile} {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+}
+
+.subscribeLink {
+  display: block;
+  margin-bottom: .25rem;
+  font-style: italic;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #aa00aa;
+  font-size: .8rem;
+
+  @media #{$notMobile} {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.desc {
+  font-size: .7rem;
+  line-height: 1.4rem;
+  margin-bottom: 10px;
+  letter-spacing: .5px;
+
+  @media #{$notMobile} {
+    margin-bottom: 20px;
+    line-height: 2rem;
+    font-size: 1.1rem;
+  }
+}
+
+.hideModileDesc {
+  display: none;
+  @media #{$notMobile} {
+    display: block;
+  }
+}
+
+.actionWrapper {
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+// .optionList {
+//   display: flex;
+//   justify-content: center;
+// }
+
+// .colorOptionButton {
+//   display: block;
+//   background: none;
+//   margin: 0px 5px 5px;
+//   border: none;
+//   border-bottom: solid 4px transparent;
+//   padding: 0 0 4px;
+
+//   &:hover {
+//     border-bottom-color: gray;
+//   }
+
+//   &.active {
+//     border-bottom-color: #333;
+//   }
+// }
+
+// .colorOptionSwatch {
+//   display: block;
+//   width: 20px;
+//   height: 20px;
+//   border: solid 1px rgb(175, 175, 175);
+//   border-radius: 10px;
+// }
+
+// .selectedColor {
+//   font-style: italic;
+//   margin-bottom: 5px;
+// }
